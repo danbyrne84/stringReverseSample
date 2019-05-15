@@ -19,7 +19,7 @@ namespace StringReverse
             Console.ReadLine();
         }
 
-        static string ReverseString(string inputStr, int maxLength = 255)
+        static string ReverseString(string inputStr, int maxLength = 2048)
         {
             if(inputStr == null) throw new ArgumentNullException("String must not be null");
             if(inputStr.Length > maxLength) throw new ArgumentException($"String must not be greater than {maxLength} characters in length");
